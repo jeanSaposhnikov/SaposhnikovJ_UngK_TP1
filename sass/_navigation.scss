@@ -2,10 +2,17 @@
 
 nav{
     background-color: gray;
+    flex: 1 0 100%;
+    display: flex;
+    transition: transform 1s;
+    order: 1;
     ul{
         display: flex;
+        flex-direction: column;
+        flex: 1 0 100%;
         text-decoration: none;
-        justify-content: space-around;
+        justify-content: center;
+        
         text-align: center;
     }
     li{
@@ -25,15 +32,16 @@ nav{
     margin: 1%;
     display: inline-block;
     cursor: pointer;
-    /*Effet de transition sur la rotation*/
+
     transition: transform 1s;
+    align-self: flex-end;
 } 
-#burger:checked~ footer{
+#burger:checked~ #contenu > main{
 
     transform: translateX(-100%);
 }
 
-#burger:checked~ nav{
+#burger:checked~ #contenu > nav{
     transform: translateX(-100%);
 }
 
@@ -41,14 +49,25 @@ nav{
     transform: rotate(90deg);
 }
 
-
 #burger {
     display: none;
 }
-// ---------------------------------------------------------------- 
-@media screen and (min-width:1000px) {
 
-.boutonBurger {
-    display: none;
-}
+// ---------------------------------------------------------------- 
+@media screen and (min-width:768px) {
+
+    .boutonBurger {
+       display: none;
+    }
+
+    nav{
+        flex: 0 0 100%;
+		order:0;
+        justify-content: space-between;
+        ul{
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }
