@@ -5,16 +5,18 @@ desktop : 4 colonnes
 */
 
 
-#pied-page{
+#pied-page {
     padding-top : 30px;
     padding-bottom: 30px;
     color : darken($couleur_blanc,40%);
+
     section{
         display : flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
+
     ul {
         width : 50%;
         padding : 10px;
@@ -24,7 +26,7 @@ desktop : 4 colonnes
         flex :1;
         text-align : center;
         border: 3px dotted lighten($couleur_rouge, 17%);
-        &:nth-of-type(1){
+        &:nth-of-type(1) {
             @include label("Un", #0ff, white);
             }
         &:nth-of-type(2) {
@@ -40,14 +42,12 @@ desktop : 4 colonnes
         li {
            padding : 3px;
         }
-        
     }
 }
 
-
-@media screen and (min-width: 780px)
-{
+@media screen and (min-width: 780px) {
 #pied-page {
+
     section{
 
         flex-direction: row;
@@ -56,6 +56,7 @@ desktop : 4 colonnes
         align-items: center;
         align-content: center;
     }
+
     ul {
             flex : 1 1 40%; // pour un wrap sur 2 colonnes
             text-align : center;
@@ -66,6 +67,7 @@ desktop : 4 colonnes
 
 @media screen and (min-width: 1024px) {
     #pied-page {
+        
         section {
             flex-wrap: nowrap;
             flex-direction: row;

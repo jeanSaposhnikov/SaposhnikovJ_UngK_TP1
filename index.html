@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TP1</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <input type="checkbox" id="burger" />
-        <label for="burger" class="boutonBurger"></label>
-        <div id="contenu">
+        <header>
+            <input type="checkbox" id="burger" />
+            <label for="burger" class="boutonBurger"></label>
+            
             <nav>
                 <ul>
                     <li>Option 1</li>
@@ -16,8 +22,25 @@
                     <li>Option 4</li>
                 </ul>
             </nav>
+        </header>
+        
+        <div id="contenu">
             <main>
-                
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide" id="slide-1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam corporis error at rem. Labore porro voluptatum eveniet, ratione eum eaque accusamus hic beatae consectetur, a aut accusantium excepturi officiis?</p></div>
+                        <div class="slide" id="slide-2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur tempora nihil porro perferendis vitae nesciunt incidunt omnis nostrum. Sed laboriosam eligendi mollitia id eos animi soluta ipsam error. Molestiae!</p></div>
+                        <div class="slide" id="slide-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores sed neque amet vitae itaque repellat libero eaque molestiae at repudiandae temporibus animi culpa inventore modi, nemo cumque totam corrupti.</p></div>
+                        <div class="slide" id="slide-4"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat exercitationem quidem cumque earum veritatis, nihil ratione, odit quasi sint in inventore reprehenderit culpa vitae? Error quae eos adipisci nulla deserunt?</p></div>
+                        <div class="slide" id="slide-5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus aliquam, labore architecto adipisci voluptatum laboriosam, sed magni tempore eum vel ut minima amet officiis? Ipsum, reiciendis! Sequi cumque quia voluptatem.</p></div>
+                    </div>
+                    
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                    <a href="#slide-4">4</a>
+                    <a href="#slide-5">5</a>
+                </div>
             </main>
         </div>
 
@@ -53,6 +76,5 @@
                 </ul>
             </section>
         </footer>
-
     </body>
 </html>
