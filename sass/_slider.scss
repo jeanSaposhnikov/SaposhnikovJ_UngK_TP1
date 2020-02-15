@@ -1,0 +1,100 @@
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 3rem;
+
+    a {
+        display: inline-flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        color: white;
+        background: lighten($couleur_rouge, 10%);
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        .slide {
+            color: black;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            width: 300px;
+            height: 300px;
+            margin-right: 50px;
+            border-radius: 10px;
+            transform-origin: center center;
+            transform: scale(1);
+            transition: transform 0.5s;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+
+            p {
+                margin: auto 45px;
+                text-align: justify;
+                color: white;
+                padding: 10px;
+                border: 7px solid whitesmoke;
+            }
+        }
+
+        #slide-1 {
+            background-color: $couleur_rouge;
+        }
+
+        #slide-2 {
+            background-color: $couleur_blanc;
+        }
+
+        #slide-3 {
+            background-color: $couleur_vert;
+        }
+
+        #slide-4 {
+            background-color: $couleur_bleu;
+        }
+
+        #slide-5 {
+            background-color: $couleur_jaune;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .slider {
+        width: 500px;
+
+        .slides {
+            .slide {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .slider {
+        width: 800px;
+
+        .slides {
+            .slide {
+                width: 800px;
+            }
+        }
+    }
+}
