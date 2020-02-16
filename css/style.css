@@ -225,13 +225,11 @@ header {
 }
 
 h1 {
-  font-size: 3em;
   padding: 1rem 0 .1rem 0;
   margin: 0;
 }
 
 h2 {
-  font-size: 1em;
   padding: 0 0 20px 0;
   margin: 0;
 }
@@ -262,17 +260,6 @@ ul {
   -webkit-animation: animMot 1s;
           animation: animMot 1s;
   margin: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  header h1 {
-    font-size: 5em;
-    margin: 0;
-  }
-  header h2 {
-    font-size: 1em;
-    margin: 0;
-  }
 }
 
 /* # Layout */
@@ -349,14 +336,22 @@ body #contenu main #zoneAnim {
 }
 
 /* # Typography */
-h1 {
-  color: red;
-}
-
 /* # Entete */
 header {
-  color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #141414;
+  color: #979090;
   height: 15vh;
+  font-size: 1.50rem;
 }
 
 /* # Slider */
@@ -571,6 +566,9 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  #btnMenu {
+    display: none;
+  }
   #menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -592,9 +590,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-height: 10vh;
+    max-height: 7vh;
     margin: 0;
-    height: 10vh;
+    height: 7vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

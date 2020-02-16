@@ -1,5 +1,9 @@
-header{  
-    color: blue;
+header{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+    color: #979090;
     height: 15vh;
+    font-size: 1.50rem;
 }
-
