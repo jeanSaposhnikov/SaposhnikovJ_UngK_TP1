@@ -22,6 +22,22 @@ ul {
     list-style-type: none;
 }
 
+
+
+@keyframes animMot{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.animMot{
+    animation: animMot 1s;
+    margin: 10px;
+}
+
+
 @media screen and (min-width:768px) {
     header {
 

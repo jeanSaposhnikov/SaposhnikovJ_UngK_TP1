@@ -1,30 +1,45 @@
-body{
+body {
     max-width: 100vw;
     max-height: 100vh;
     display: flex;
     flex-direction: column;
 
-    nav{
+    nav {
         width: 100%;
     }
 
-    #contenu{
+    #contenu {
         display: flex;
         max-width: 100vw;
         flex: 1 0 100%;
         overflow-x: hidden;
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 100%;
+            flex-flow: column-nowrap;
+            transition: transform 1s;
+
+            #zoneAnim {
+                width: 100%;
+                background-color: ghostwhite;
+                // display: flex;
+                //justify-content: space-around;
+                //flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                border: 1px solid black;
+                text-align: center;
+
+            }
+        }
     }
 
-    main{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 1 0 100%;
-        flex-flow: column-nowrap;
-        transition: transform 1s;
-    }
+
 }
 
 // ---------------------------------------------------------------- 
