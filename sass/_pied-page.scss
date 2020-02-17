@@ -3,6 +3,15 @@
     padding-bottom: 30px;
     background-color: lighten(#141414, 20%);
 
+    .credits {
+        background-color: #474747;
+        display: flex;
+        color: #f1c40f;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     section{
         padding-top: 3rem;
         display : flex;

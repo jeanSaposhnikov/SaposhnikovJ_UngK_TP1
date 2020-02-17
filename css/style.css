@@ -350,8 +350,34 @@ header {
           align-items: center;
   background-color: #141414;
   color: #979090;
-  height: 11vh;
-  font-size: 1.50rem;
+  height: 8vh;
+  font-size: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+header h1::after {
+  content: " - Mobile";
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 1.25rem;
+    height: 9vh;
+  }
+  header h1::after {
+    content: " - Tablette";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    font-size: 1.50rem;
+    height: 11vh;
+  }
+  header h1::after {
+    content: " - Ordinateur";
+  }
 }
 
 /* # Slider */
@@ -420,7 +446,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .slider .slides .slide p {
@@ -460,6 +486,7 @@ header {
   }
   .slider .slides .slide {
     width: 500px;
+    font-size: 20px;
   }
 }
 
@@ -548,8 +575,8 @@ header {
 
 #menu ul li {
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 #menu ul li:nth-of-type(1) {
@@ -661,6 +688,24 @@ header {
   height: 25vh;
   padding-bottom: 30px;
   background-color: #474747;
+}
+
+#pied-page .credits {
+  background-color: #474747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f1c40f;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #pied-page section {

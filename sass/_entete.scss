@@ -4,6 +4,33 @@ header{
     align-items: center;
     background-color: #141414;
     color: #979090;
-    height: 11vh;
-    font-size: 1.50rem;
+    height: 8vh;
+    font-size: 1rem;
+    transition: all 1s ease-in-out;
+
+    h1::after {
+        content: " - Mobile";
+    }
+}
+
+@media screen and (min-width:768px) { 
+    header{
+        font-size: 1.25rem;
+        height: 9vh;
+
+        h1::after {
+            content: " - Tablette";
+        }
+    }
+}
+
+@media screen and (min-width:1024px) { 
+    header{
+        font-size: 1.50rem;
+        height: 11vh;
+
+        h1::after {
+            content: " - Ordinateur";
+        }
+    }
 }
