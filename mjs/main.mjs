@@ -4,11 +4,19 @@ import {Horaire} from "./Horaire.mjs";
 import {config_horaire} from "./config_horaire.mjs";
 
 /*===============================================Animation Slider========================*/ 
-let boutons=document.querySelectorAll(".slider a");
-let elementsAnim=document.querySelectorAll(".slide p");
+let boutons = document.querySelectorAll(".slider a");
+let elementsAnim = document.querySelectorAll(".slide p");
+let couleurs = ["blue","white","gray","yellow"];
 for(let i=0; i<boutons.length; i++) {
-    boutons[i].addEventListener("click",function(){
-        new anim_slider(elementsAnim[i]);
+    boutons[i].addEventListener("click",function() {
+
+        /*-----Remettre l'opacité à 0----*/ 
+        for(let i=0; i<elementsAnim.length; i++) {
+            elementsAnim[i].style.opacity=0;
+        }
+        /*-----------Animation ------------*/
+        new anim_slider(elementsAnim[i],couleurs);
+
     })
 }
 
