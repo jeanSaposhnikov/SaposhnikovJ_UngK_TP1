@@ -1,3 +1,7 @@
+.HoraireAnim {
+    margin-bottom: 3rem;
+}
+
 .horaire {
     display: grid;
     grid-template-columns: 0.08fr repeat(1, 1fr);
@@ -8,7 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px dotted $couleur_bleu;
+        border: 2px solid black;
     }
 
     p {
@@ -16,50 +20,43 @@
     }
 }
 
-#jour-1 {
-    color: darken($couleur_vert, 15%);
+#jour-1 {  
     font-weight: bold;
     grid-column: 1;
     grid-row: 1;
 }
 
 #jour-2 {
-    color: darken($couleur_vert, 15%);
     font-weight: bold;
     grid-column: 1;
     grid-row: 2;
 }
 
 #jour-3 {
-    color: darken($couleur_vert, 15%);
     font-weight: bold;
     grid-column: 1;
     grid-row: 3;
 }
 
 #jour-4 {
-    color: darken($couleur_vert, 15%);
     font-weight: bold;
     grid-column: 1;
     grid-row: 4;
 }
 
 #jour-5 {
-    color: darken($couleur_vert, 15%);
     font-weight: bold;
     grid-column: 1;
     grid-row: 5;
 }
 
 #jour-6 {
-    color: darken($couleur_vert, 15%);
     font-weight: bold;
     grid-column: 1;
     grid-row: 6;
 }
 
 #jour-7 {
-    color: darken($couleur_vert, 15%);
     font-weight: bold;
     grid-column: 1;
     grid-row: 7;
@@ -105,4 +102,10 @@
     color: $couleur_jaune;
     grid-column: 2;
     grid-row: 7;
+}
+
+@media screen and (min-width:768px) {
+    .HoraireAnim {
+        margin-bottom: 6rem;
+    }
 }
