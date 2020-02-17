@@ -41,8 +41,11 @@
             justify-content: center;
             align-items: center;
             font-size: 20px;
+            
 
             p {
+                transition: opacity 6s;
+                opacity: 0;
                 margin: auto 45px;
                 text-align: justify;
                 color: white;
@@ -57,18 +60,22 @@
 
         #slide-2 {
             background-color: $couleur_blanc;
+            //opacity: 0;
         }
 
         #slide-3 {
             background-color: $couleur_vert;
+            //opacity: 0;
         }
 
         #slide-4 {
             background-color: $couleur_bleu;
+            //opacity: 0;
         }
 
         #slide-5 {
             background-color: $couleur_jaune;
+            //opacity: 0;
         }
     }
 }

@@ -5,7 +5,7 @@ export class anim_mot {
       this.creerMot();
     }
     
-    creerMot(){
+    creerMot() {
         let mot=document.createElement('p');
         mot.innerHTML=this.mots[Math.floor(Math.random()*Math.floor(this.mots.length))];
         this.conteneurParent.appendChild(mot);

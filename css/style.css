@@ -424,6 +424,9 @@ header {
 }
 
 .slider .slides .slide p {
+  -webkit-transition: opacity 6s;
+  transition: opacity 6s;
+  opacity: 0;
   margin: auto 45px;
   text-align: justify;
   color: white;
