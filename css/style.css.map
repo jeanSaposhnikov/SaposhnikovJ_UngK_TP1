@@ -11,7 +11,8 @@
         "../sass/_entete.scss",
         "../sass/_slider.scss",
         "../sass/_navigation.scss",
-        "../sass/_pied-page.scss"
+        "../sass/_pied-page.scss",
+        "../sass/_horaire.scss"
     ],
     "names": [],
     "file": "style.css"
