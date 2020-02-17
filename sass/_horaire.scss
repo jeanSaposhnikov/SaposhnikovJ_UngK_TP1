@@ -1,0 +1,108 @@
+.horaire {
+    display: grid;
+    grid-template-columns: 0.08fr repeat(1, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dotted $couleur_bleu;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+#jour-1 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#jour-2 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#jour-3 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#jour-4 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#jour-5 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#jour-6 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#jour-7 {
+    color: darken($couleur_vert, 15%);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 7;
+}
+
+#heure-8 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#heure-9 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#heure-10 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#heure-11 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#heure-12 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#heure-13 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+#heure-14 {
+    color: $couleur_jaune;
+    grid-column: 2;
+    grid-row: 7;
+}
