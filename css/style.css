@@ -349,6 +349,10 @@ body #contenu main {
 }
 
 /* # Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* # Entete */
 header {
   display: -webkit-box;
