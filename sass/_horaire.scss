@@ -9,10 +9,8 @@
     
 
     div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid black;
+        @include flex("", center, center);
+        @include border(2px, solid, black);
     }
 
     p {

@@ -4,11 +4,10 @@ body {
     }
 
     #contenu {
-        display: flex;
+        @include flex(column, "", "");
         max-width: 100vw;
         flex: 1 0 100%;
         overflow-x: hidden;
-        flex-direction: column;
         background-color: lighten($couleur_rouge, 20%);
 
         #zoneAnim {
@@ -19,17 +18,14 @@ body {
             //flex-wrap: wrap;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            border: 1px solid black;
+            @include border(1px, solid, black);
             text-align: center;
             background-color: lighten($couleur_rouge, 20%);
         }
 
         main {
+            @include flex(column, center, center);
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             flex: 1 0 100%;
             flex-flow: column-nowrap;
             transition: transform 1s;
@@ -44,8 +40,7 @@ body {
     body {
         #contenu {
             main {
-                flex-direction: row;
-                justify-content: space-around;
+                @include flex(row, space-around, "");
             }
         }
     }

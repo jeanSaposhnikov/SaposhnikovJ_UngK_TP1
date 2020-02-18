@@ -1,7 +1,5 @@
 header{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, "", center);
     background-color: #141414;
     color: #979090;
     height: 8vh;
