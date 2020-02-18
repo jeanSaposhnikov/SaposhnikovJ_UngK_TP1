@@ -6,7 +6,7 @@ import {config_horaire} from "./config_horaire.mjs";
 /*===============================================Animation Slider========================*/ 
 let boutons = document.querySelectorAll(".slider a");
 let elementsAnim = document.querySelectorAll(".slide p");
-let couleurs = ["blue","white","gray","yellow"];
+let couleurs = ["blue","white","gray","yellow","black"];
 for(let i=0; i<boutons.length; i++) {
     boutons[i].addEventListener("click",function() {
 
@@ -25,8 +25,11 @@ for(let i=0; i<boutons.length; i++) {
 let conteneurParent=document.querySelector("#zoneAnim");
 let mots=["html","Css","Sass","Javascript","SCRUM"];
 
+
 setInterval(function(){
-const animMot=new anim_mot(conteneurParent,mots);
+if(document.querySelectorAll("#zoneAnim .animMot").length !=12 && (window.innerWidth>758)) {
+    const animMot=new anim_mot(conteneurParent,mots);
+}
  },3000);
 
 
